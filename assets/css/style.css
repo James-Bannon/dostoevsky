@@ -1,3 +1,19 @@
 body {
     font-family: arial;
 }
+
+#menu {
+    background-color: #e62e00c4;
+    font-size: 130%;
+    min-height:3rem;
+    align-items:center;
+    
+}
+
+#menu li {
+    float:left;
+    list-style-type:none;
+    
+    border-style: solid;
+    
+}
