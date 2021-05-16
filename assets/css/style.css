@@ -1,5 +1,7 @@
 body {
     font-family: arial;
+    color: white;
+    background-color: black;
 }
 
 #menu {
@@ -16,6 +18,11 @@ body {
     
     border-style: solid;
     
+}
+
+#intro {
+    background-image: url(../images/Portrait.jpg);
+
 }
 
 #intro div {
