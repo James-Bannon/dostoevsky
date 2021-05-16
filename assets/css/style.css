@@ -17,3 +17,8 @@ body {
     border-style: solid;
     
 }
+
+#intro div {
+    display:inline-block;
+    width:33%;
+}
