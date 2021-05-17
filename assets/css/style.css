@@ -49,6 +49,7 @@ a.fill-div {
   width:100%;
   height:auto;
   z-index: -5;
+  top:150px;
 }
 
 #intro #decemberists {
@@ -56,8 +57,9 @@ a.fill-div {
   height:auto;
   z-index: 1;
   position:absolute;
-  left:1000px;
+  left:0;
   top:150px;
+  opacity: 0%;
 }
 
 div a:hover {
@@ -65,5 +67,8 @@ div a:hover {
 }
 
 #intro a:hover ~ #decemberists {
-  transform: translateX(-1000px)
+  opacity:100%;
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-timing-function: ease-inExpo;
 }
