@@ -2,6 +2,9 @@ body {
     font-family: arial;
     color: white;
     background-color: black;
+    margin:0;
+    padding:0;
+    border:0;
 }
 
 
@@ -76,30 +79,91 @@ div a:hover {
 
 /* Timeline Page Css */
 
-#timeline {
+#timeline-heading {
+  position:absolute;
+  width: 100%;
+
+}
+
+#left-hand-timeline {
   position: relative;
-  width:100%;
-  margin:0 auto;
-  height:100%;
+  display: inline-block;
+  width:40%;
+  height: 2000px;
+  border:3px solid pink;
+  margin-left: 2%;
+  vertical-align:top;
 }
 
-#timescale {
-  position:absolute;
-  width:10%;
-  height:100%;
-  left:45%;
+#center-timeline {
+  display: inline-block;
+  width:15%;
+  height: 2000px;
+  border:3px solid pink;
 }
-.centre-line  {
-  position:absolute;
-  width:5px;
+
+#right-hand-timeline {
+  display: inline-block;
+  width:40%;
+  height: 2000px;
+  border:3px solid pink;
+  vertical-align:top;
+}
+.title-box {
+  
+  width:90%;
+  border-width:0px 0px 3px 0px;
+  border-style:solid;
+  border-color:pink;
+  padding:10px 5%;
+  font-size:20px;
+  text-align:center;
+}
+
+.number-box {
+  position: absolute;
+  height: 20px;
+
+}
+
+.five-numbers {
+  position: relative;
+  display: inline-block;
+  margin:auto;
+  width: 40%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.left-hash {
+  position: relative;
+  display: inline-block;
+  margin-left: -20%;
+  width:45%;
+  height:5px;
   background-color: aquamarine;
-  height:100%;
+  vertical-align: middle;
 }
 
-#centre-left-line {
-  left:0;
+.right-hash {
+  position: relative;
+  margin-right: -20%;
+  display: inline-block;
+  width:45%;
+  height:5px;
+  background-color: aquamarine;
+  vertical-align: middle;
+} 
+
+.left-scratch {
+  border-width: 0px 2px 2px 0px;
+  border-style: solid;
+  border-color: aquamarine;
+  display: inline-block;
+  width: 50%;
+  height:10px;
+  
+
 }
 
-#centre-right-line {
-  right:0;
-}
+
