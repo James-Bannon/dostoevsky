@@ -72,3 +72,34 @@ div a:hover {
   transition-duration: 1s;
   transition-timing-function: ease-inExpo;
 }
+
+
+/* Timeline Page Css */
+
+#timeline {
+  position: relative;
+  width:100%;
+  margin:0 auto;
+  height:100%;
+}
+
+#timescale {
+  position:absolute;
+  width:10%;
+  height:100%;
+  left:45%;
+}
+.centre-line  {
+  position:absolute;
+  width:5px;
+  background-color: aquamarine;
+  height:100%;
+}
+
+#centre-left-line {
+  left:0;
+}
+
+#centre-right-line {
+  right:0;
+}
