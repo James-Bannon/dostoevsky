@@ -121,24 +121,26 @@ div a:hover {
 }
 
 .number-box {
-  position: absolute;
+  position: relative;
   height: 20px;
 
 }
 
 .five-numbers {
-  position: relative;
+  position: absolute;
   display: inline-block;
   margin:auto;
+  left:30%;
   width: 40%;
   font-size: 20px;
   text-align: center;
 }
 
 .left-hash {
-  position: relative;
+  position: absolute;
   display: inline-block;
   margin-left: -20%;
+  margin-top: 10px;
   width:45%;
   height:5px;
   background-color: aquamarine;
@@ -146,8 +148,9 @@ div a:hover {
 }
 
 .right-hash {
-  position: relative;
-  margin-right: -20%;
+  position: absolute;
+  margin-left: 75%;
+  margin-top: 10px;
   display: inline-block;
   width:45%;
   height:5px;
@@ -155,15 +158,64 @@ div a:hover {
   vertical-align: middle;
 } 
 
+.year-mark {
+  position: relative;
+  height:20px;
+}
 .left-scratch {
+  position: absolute;
   border-width: 0px 2px 2px 0px;
   border-style: solid;
   border-color: aquamarine;
   display: inline-block;
-  width: 50%;
+  top:0px;
+  right:50%;
+  width: 30%;
   height:10px;
   
 
 }
 
+.right-scratch {
+  position: absolute;
+  border-width: 0px 0px 2px 2px;
+  border-style: solid;
+  border-color: aquamarine;
+  display: inline-block;
+  top:0px;
+  left:50%;
+  width: 30%;
+  height:10px;
+}
 
+.left-scratch-bottom {
+  position: absolute;
+  border-width: 2px 2px 0px 0px;
+  border-style: solid;
+  border-color: aquamarine;
+  display: inline-block;
+  top:10px;
+  right:50%;
+  width: 30%;
+  height:10px;
+  
+}
+
+.right-scratch-bottom {
+  position: absolute;
+  border-width: 2px 0px 0px 2px;
+  border-style: solid;
+  border-color: aquamarine;
+  display: inline-block;
+  top:10px;
+  left:50%;
+  width: 30%;
+  height:10px;
+}
+
+#uprising {
+  width:40%;
+  height:40px;
+  margin-left:10%;
+  background-color: cadetblue;
+}
