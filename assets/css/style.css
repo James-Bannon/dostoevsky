@@ -65,7 +65,7 @@ a.fill-div {
   opacity: 0%;
 }
 
-div a:hover {
+.fill-div-intro:hover {
   background: #eee;
 }
 
@@ -122,7 +122,7 @@ div a:hover {
 
 .number-box {
   position: relative;
-  height: 20px;
+  height: 25px;
 
 }
 
@@ -160,7 +160,7 @@ div a:hover {
 
 .year-mark {
   position: relative;
-  height:20px;
+  height:25px;
 }
 .left-scratch {
   position: absolute;
@@ -171,7 +171,7 @@ div a:hover {
   top:0px;
   right:50%;
   width: 30%;
-  height:10px;
+  height:12.5px;
   
 
 }
@@ -185,7 +185,7 @@ div a:hover {
   top:0px;
   left:50%;
   width: 30%;
-  height:10px;
+  height:12.5px;
 }
 
 .left-scratch-bottom {
@@ -194,10 +194,10 @@ div a:hover {
   border-style: solid;
   border-color: aquamarine;
   display: inline-block;
-  top:10px;
+  top:12.5px;
   right:50%;
   width: 30%;
-  height:10px;
+  height:12.5px;
   
 }
 
@@ -207,15 +207,153 @@ div a:hover {
   border-style: solid;
   border-color: aquamarine;
   display: inline-block;
-  top:10px;
+  top:12.5px;
   left:50%;
   width: 30%;
-  height:10px;
+  height:12.5px;
 }
 
-#uprising {
-  width:40%;
-  height:40px;
-  margin-left:10%;
-  background-color: cadetblue;
+.fill-div-timeline {
+  position: relative;
+  display: block;
+  height:80px;
+  width:80%;
+  margin-top: 20px;
+  z-index: 0;
+   
+  transition: all 0.3s ease-out;
 }
+
+.timeline-right {
+  left:5%;
+  background-color: gold;
+}
+
+.timeline-left {
+  left: 15%;
+  background-color: green;
+}
+
+.russia-event {
+  position: absolute;
+  width:100%;
+  height:100%;
+
+  /* background-color: cadetblue; */
+  border-width: 10px 5px 0px 0px;
+  border-color: silver;
+  border-style: groove;
+  border-radius: 5px 20px 20px 0px;
+ 
+  
+  overflow: visible;
+}
+
+.dos-event {
+  position: absolute;
+  width:100%;
+  height:100%;
+
+  /* background-color: cadetblue; */
+  border-width: 10px 0px 0px 5px;
+  border-color: silver;
+  border-style: groove;
+  border-radius: 20px 5px 0px 20px;
+  
+  
+  overflow: visible;
+}
+
+.russia-info-fill {
+  position: absolute;
+  width:80%;
+  background-color: red;
+  height:100%;
+  right:0%;
+  border-radius: 5px 20px 20px 0px;
+  z-index: -2;
+}
+
+.dos-info-fill {
+  position: absolute;
+  width:80%;
+  background-color: red;
+  height:100%;
+  left:0%;
+  border-radius: 20px 5px 0px 20px;
+  z-index: -2;
+}
+
+.timeline-pictures {
+  position:absolute;
+  height:100%;
+  width:auto;
+  z-index: -1;
+  overflow: hidden;
+  
+}
+
+.russia-event .timeline-pictures {
+  right:0;
+  border-radius: 0px 10px 15px 0px;
+}
+
+.dos-event .timeline-pictures {
+  left:0;
+  border-radius: 10px 0px 0px 15px;
+}
+
+
+.fill-div-timeline:hover  {
+  background-color: white;
+  transform: scale(1.1);
+}
+
+.overlay1 {position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index:1;
+}
+
+.overlay1:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.pop-up {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  /* transition: all 0.2s ease-in-out; */
+  z-index: 2;
+}
+
+.pop-up h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.pop-up .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.pop-up .close:hover {
+  color: #06D85F;
+}
+
