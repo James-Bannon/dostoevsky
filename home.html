@@ -13,53 +13,71 @@
 </head>
 <body>
     <header>
-        <nav id="menu">
+        <nav class="menu">
             <ul>
-                <li>
-                    <a href="home.html">Home</a>
-                </li>
-                <li>
-                    <a href="#">Works</a>
-                </li>
-                <li>
-                    <a href="history.html">History</a>
-                </li>
-                <li>
-                    <a href="#">Philosophy</a>
-                </li>
+                <a href="home.html">
+                    <li>
+                        <h2>Home</h2>
+                    </li>
+                </a>
+                <a href="works.html">
+                    <li>
+                        <h2>Works</h2>
+                    </li>
+                </a>
+                <a href="history.html">
+                    <li>
+                        <h2>History</h2>
+                    </li>
+                </a>
+                <a href="philosophy.html">
+                    <li>
+                        <h2>Philosophy</h2>
+                    </li>
+                </a>
             </ul>
         </nav>
     </header>
     <section>
-        <h1>The Life and Work of Dostoevsky</h1>
+        <div class="title-block">
+           <img src="assets/images/top2.jpg">
+           <h1>The Life and Work of Dostoevsky </h1>
+        </div>      
+       
     </section>
     <section id="intro">
-        <div>
-            <a class="fill-div-intro" href="works.html">
-            <h2>Works</h2>
-            <p></p>
-            </a>
-
-            <img>
-        </div>
-       
-        <div>
-            <a class="fill-div-intro" href="history.html">
-            <h2>History</h2>
-            <p>A timeline of Dostoevsky's life and the events of Russia surroungding him at the time.</p>
-            </a>
+        <a class="fill-div-intro " href="works.html">
+            <div class="main-head" >
             
-            <img id="decemberists" src="assets/images/decemberists.jpg">
-        </div>
+                <h2>Works</h2>
+                <img src="assets/images/bot.jpg">
+                <img class="overlay-flare"  src="assets/images/bot_white.jpg">
+                <p></p>
+            </div>
+        </a>
+        <a class="fill-div-intro " href="history.html">
         
-        <div>
-            <h2>Philosophy</h2>
+            <div class="main-head" >
+                <h2>History</h2>
+                <img src="assets/images/bot.jpg">
+                <img class="overlay-flare" src="assets/images/bot_white.jpg">
+                <p>A timeline of Dostoevsky's life and the events of Russia surroungding him at the time.</p>
         </div>
-
-        <img id="portrait" src="assets/images/Portrait.jpg">
+        </a>
         
+        <a class="fill-div-intro " href="works.html">
+            <div class="main-head">
+                <h2>Philosophy</h2>
+                <img src="assets/images/bot.jpg">
+                <img class="overlay-flare"  src="assets/images/bot_white.jpg">
+            </div>
+        </a>
+       
+        <img class="intro_image" id="portrait" src="assets/images/Portrait.jpg">
+        <img class="intro_image overlay-image" id="decemberists" src="assets/images/decemberists.jpg">
+        <img class="intro_image overlay-image" id="crime_punishment" src ="assets/images/crime_and_punishment.jpg">
         
     </section>
-    <footer>Links</footer>
+    <!-- <footer>Links</footer> -->
 </body>
 </html>
