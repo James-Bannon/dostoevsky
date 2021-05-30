@@ -185,36 +185,37 @@ a[href="works.html"]:hover~#crime_punishment  {
 
 }
 
-#left-hand-timeline {
+.timeline-format {
   position: relative;
   display: inline-block;
-  width:40%;
+  border:5px groove silver;
+  vertical-align: top;
+ 
   height: 2000px;
-  border:3px solid pink;
-  margin-left: 2%;
-  vertical-align:top;
+}
+
+#left-hand-timeline {
+width:40%;
+margin-left: 1.5%;
+ 
 }
 
 #center-timeline {
-  display: inline-block;
-  width:15%;
+   width:15%;
   height: 2000px;
-  border:3px solid pink;
+  
 }
 
 #right-hand-timeline {
-  display: inline-block;
   width:40%;
   height: 2000px;
-  border:3px solid pink;
-  vertical-align:top;
 }
 .title-box {
   
   width:90%;
-  border-width:0px 0px 3px 0px;
-  border-style:solid;
-  border-color:pink;
+  border-width:0px 0px 5px 0px;
+  border-style:groove;
+  border-color:silver;
   padding:10px 5%;
   font-size:20px;
   text-align:center;
@@ -222,7 +223,7 @@ a[href="works.html"]:hover~#crime_punishment  {
 
 .number-box {
   position: relative;
-  height: 25px;
+  height: 20px;
 
 }
 
@@ -236,6 +237,7 @@ a[href="works.html"]:hover~#crime_punishment  {
   text-align: center;
 }
 
+
 .left-hash {
   position: absolute;
   display: inline-block;
@@ -243,7 +245,7 @@ a[href="works.html"]:hover~#crime_punishment  {
   margin-top: 10px;
   width:45%;
   height:5px;
-  background-color: aquamarine;
+  background-color: silver;
   vertical-align: middle;
 }
 
@@ -254,7 +256,7 @@ a[href="works.html"]:hover~#crime_punishment  {
   display: inline-block;
   width:45%;
   height:5px;
-  background-color: aquamarine;
+  background-color: silver;
   vertical-align: middle;
 } 
 
@@ -266,7 +268,7 @@ a[href="works.html"]:hover~#crime_punishment  {
   position: absolute;
   border-width: 0px 2px 2px 0px;
   border-style: solid;
-  border-color: aquamarine;
+  border-color: rgb(180, 180, 180);
   display: inline-block;
   top:0px;
   right:50%;
@@ -280,7 +282,7 @@ a[href="works.html"]:hover~#crime_punishment  {
   position: absolute;
   border-width: 0px 0px 2px 2px;
   border-style: solid;
-  border-color: aquamarine;
+  border-color: rgb(180, 180, 180);
   display: inline-block;
   top:0px;
   left:50%;
@@ -292,7 +294,7 @@ a[href="works.html"]:hover~#crime_punishment  {
   position: absolute;
   border-width: 2px 2px 0px 0px;
   border-style: solid;
-  border-color: aquamarine;
+  border-color: rgb(180, 180, 180);
   display: inline-block;
   top:12.5px;
   right:50%;
@@ -305,7 +307,7 @@ a[href="works.html"]:hover~#crime_punishment  {
   position: absolute;
   border-width: 2px 0px 0px 2px;
   border-style: solid;
-  border-color: aquamarine;
+  border-color: rgb(180, 180, 180);
   display: inline-block;
   top:12.5px;
   left:50%;
@@ -317,7 +319,7 @@ a[href="works.html"]:hover~#crime_punishment  {
   position: relative;
   display: block;
   height:80px;
-  width:80%;
+  width:90%;
   margin-top: 20px;
   z-index: 0;
    
@@ -326,11 +328,11 @@ a[href="works.html"]:hover~#crime_punishment  {
 
 .timeline-right {
   left:5%;
-  background-color: gold;
+  /* background-color: gold; */
 }
 
 .timeline-left {
-  left: 15%;
+  left: 5%;
   background-color: green;
 }
 
@@ -367,7 +369,7 @@ a[href="works.html"]:hover~#crime_punishment  {
 .russia-info-fill {
   position: absolute;
   width:80%;
-  background-color: red;
+  background-color: rgb(85, 85, 85);
   height:100%;
   right:0%;
   border-radius: 5px 20px 20px 0px;
@@ -405,7 +407,7 @@ a[href="works.html"]:hover~#crime_punishment  {
 
 
 .fill-div-timeline:hover  {
-  background-color: white;
+  /* background-color: white; */
   transform: scale(1.1);
 }
 
@@ -429,18 +431,21 @@ a[href="works.html"]:hover~#crime_punishment  {
 .pop-up {
   margin: 70px auto;
   padding: 20px;
-  background: #fff;
+  background: rgb(153, 101, 5);
   border-radius: 5px;
   width: 30%;
   position: relative;
   /* transition: all 0.2s ease-in-out; */
   z-index: 2;
+  width:1200px;
 }
 
 .pop-up h2 {
   margin-top: 0;
-  color: #333;
+  color: rgb(255, 255, 255);
   font-family: Tahoma, Arial, sans-serif;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .pop-up .close {
