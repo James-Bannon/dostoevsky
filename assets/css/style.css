@@ -67,6 +67,8 @@ body {
   width:25%;
   height: auto;
 }
+
+
 #intro {
     position:relative;
     width:100%;
@@ -102,16 +104,19 @@ body {
   
 }
 .main-head img {
-  position: absolute;
+  
   width: 25%;
   height: auto;
   z-index: -1;
   left:50%;
-  transform: translate(-50%,0%);
+  
 }
 
 .main-head .overlay-flare {
+  position: absolute;
+  width:26%;
   z-index: 1;
+  transform: translate(-50%,0%);
 }  
 
 /* .overlay-flare { */
@@ -138,7 +143,7 @@ body {
  .fill-div-intro:hover>.main-head>.overlay-flare { 
   opacity:100%;
   transition-property: opacity;
-  transition-duration: 0.1s;
+  transition-duration: 0.01s;
   
 }
 
@@ -333,7 +338,7 @@ margin-left: 1.5%;
 
 .timeline-left {
   left: 5%;
-  background-color: green;
+  
 }
 
 .russia-event {
@@ -379,7 +384,7 @@ margin-left: 1.5%;
 .dos-info-fill {
   position: absolute;
   width:80%;
-  background-color: red;
+  background-color: rgb(33, 119, 22);
   height:100%;
   left:0%;
   border-radius: 20px 5px 0px 20px;
@@ -433,11 +438,12 @@ margin-left: 1.5%;
   padding: 20px;
   background: rgb(153, 101, 5);
   border-radius: 5px;
-  width: 30%;
+  width: 60%;
   position: relative;
   /* transition: all 0.2s ease-in-out; */
   z-index: 2;
-  width:1200px;
+  overflow:auto;
+  
 }
 
 .pop-up h2 {
@@ -446,6 +452,14 @@ margin-left: 1.5%;
   font-family: Tahoma, Arial, sans-serif;
   text-align: center;
   text-decoration: underline;
+}
+
+.pop-up img {
+  float:right;
+  display: inline;
+  max-height:300px;
+  width:auto;
+  margin-top: 10px;
 }
 
 .pop-up .close {
