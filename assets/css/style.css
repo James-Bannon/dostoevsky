@@ -180,6 +180,12 @@ a[href="works.html"]:hover~#crime_punishment  {
   transition-duration: 1s;
   transition-timing-function: ease-inExpo;
 }
+a[href="philosophy.html"]:hover~#barge {
+  opacity:100%;
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-timing-function: ease-inExpo;
+}
 
 
 /* Timeline Page Css */
